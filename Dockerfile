@@ -15,6 +15,7 @@ COPY package.json pnpm-lock.yaml* ./
 RUN pnpm install --frozen-lockfile --ignore-scripts
 
 COPY src src
+COPY public public
 COPY vite.config.ts .
 COPY tsconfig.json .
 COPY project.inlang project.inlang
